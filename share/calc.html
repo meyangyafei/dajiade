@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3的calc()使用</title>
+	<style type="text/css">
+		.demo {
+			width: 300px;
+			margin: 100px auto;
+			background: #60f;
+			padding: 10px 0;
+		}
+		.box {
+		  	width: 100%;
+			background: #f60;
+			height: 50px;
+			padding: 10px;
+  			border: 5px solid green;
+  			width: calc(100% - (10px + 5px) * 2);
+		}
+		p{
+			width: 100%;
+			position: absolute;
+			bottom: 100px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		 <div class="box"></div>
+	</div>
+	<p>ie9及以上，Safari6 ,ff4,chrome19,opera15</p>	
+</body>
+</html>
